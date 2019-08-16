@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} 
+\author{Estuardo Valenzuela Girón/20181135} 
+\title{Resolucion Parcial I}  
+\usepackage{natbib}
+\usepackage{graphicx}
+% Margins 
+\topmargin= -0.45in 
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\begin{document}
+
+\maketitle
+
+\section{Ejercicio 1}
+\begin{enumerate}
+    \item   caso base: n=1\par
+    $2 \cdot s(0) $\par
+    $s(0) + s(0) = s(s(0)) -> Par$ \par
+    $0\geq 0$ \par
+    caso Inductivo: $ n=s(x) $ \par
+    $2\cdot s(x) $ \par
+    $s(x)+s(x)=s(s(x))$ \par
+   
+    \item caso base: $n=s(s(s(s(0)))))$ \par
+    $2^s(s(s(s(0))))$
+\end{enumerate}
+
+\section{Ejercicio 2}
+\begin{enumerate}
+    \item
+    \[
+    N
+    !\left\{
+    \begin{array}{l l}
+    	0 \hspace{5.9cm} n=0   \\ N \hspace{5.7cm} N=1\\   	s(0) \cdot s(0)...\cdot (n-s(0)) \cdot n  \hspace{2cm} n\neq0 \\
+    \end{array}
+    \right.
+    \]
+    \item 
+    \[
+    a \ominus
+    b\left\{
+    \begin{array}{l l}
+       0 \hspace{2.5cm} a\leq b \\
+       a \hspace{2.5cm} b=0 \\
+       a \ominus b \hspace{2cm} a\neq b
+       \end{array}
+    \right.
+    \]
+    \item 
+    \[
+    \sum_{i}^{n} \left\{
+    \begin{array}{l l}
+    0 \hspace{3cm} i=n=0 \\
+    i\oplus(i\oplus s(0)\oplus...\oplus(n-s(0)))\oplus n \hspace{1cm} n \geq i
+    \end{array}
+    \right.
+    \]
+    \item 
+    \[
+    a^b \left\{
+    \begin{array}{l l}
+    a \hspace{2cm} b=1 \\
+    1 \hspace{2cm} b=0 \\
+    a\otimes a \otimes a... (b veces) \hspace{1cm} b \geq0 \hspace{0.1cm} \wedge b \geq 1
+    \end{array}
+    \right.
+    \]
+\end{enumerate}
+    \section{Ejercicio 3}
+    \begin{enumerate}
+   \item 
+   caso base: $a=0$ \hspace{2cm} $0 \hspace{0.1cm}si\hspace{0.1cm} a=0 \hspace{0.1cm}\vee \hspace{0.1cm} b=0$\\
+   $2\otimes0 = 0 \oplus0 \\ 
+   0=0$\\
+    Caso inductivo: $a=s(x)$\\
+    $2\otimes s(x)=s(x)+s(x) \hspace{1cm}2\otimes a = a\oplus a\\
+    s(x)+s(x)=s(x)+s(x)\\
+    s(s(x))=s(s(x))$
+
+\end{enumerate}
+\end{document}
