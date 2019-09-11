@@ -36,3 +36,4 @@ conta (s,y) =
     else if esPrimo y == False
     then conta (s,y + 1)
     else y :: conta (s-1, y+1)
+
